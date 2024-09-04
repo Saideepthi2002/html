@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="firstname">firstname:</label>
+      <input
+        type="text"
+        name="fname"
+        id="firstname"
+        required
+        placeholder="eg.john"
+      /><br /><br />
+      <label for="secondname">second name:</label>
+      <input
+        type="text"
+        name="sname"
+        placeholder="william"
+        id="secondname"
+        autofocus
+      /><br /><br />
+      <label>enter email:</label>
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder="abc@gmail.com"
+      /><br /><br />
+      <label>enter mobile number:</label>
+      <input
+        type="tel"
+        name="mobile"
+        id="mobile"
+        pattern="[0-9]{10}"
+        autofocus
+      /><br /><br />
+      <label>choose fav programming language:</label><br /><br />
+      <input type="radio" name="clr" value="is" />python
+      <input type="radio" name="clr" value="is" />java
+      <input type="radio" name="clr" value="is" />c++<br /><br />
+      <label>chose your skill:</label>
+      <input type="checkbox" name="s1" value="html" />html
+      <input type="checkbox" name="s2" value="css" />css
+      <input type="checkbox" name="s3" value="js" />js
+      <input type="checkbox" name="s3" value="full" />full<br /><br />
+      <label>enter password:</label>
+      <input type="password" name="pswd" /><br /><br />
+      <textarea rows="20" cols="40"></textarea>
+
+      <br /><br />
+      <input type="submit" value="register" />
+    </form>
+  </body>
+</html>

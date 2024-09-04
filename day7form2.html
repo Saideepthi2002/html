@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <!-- dropdown -->
+    <label for="skills">select a option</label>
+    <select name="skills" id="skills" multiple>
+        <optgroup label="frontend">
+        <option values="html">Html</option>
+        <option value="css">Css</option>
+        <option value="js">Js</option>
+    </optgroup>
+    <optgroup label="backend">
+        <option value="nodejs">nodejs</option>
+        <option value="django">django</option>
+
+    </optgroup>
+    </select><br><br>
+    <!-- optiongroup -->
+    <!-- <optgroup label="backend">
+        <option value="nodejs">nodejs</option>
+        <option value="expressjs">exp</option>
+    </optgroup> -->
+    <!-- datalist -->
+     <label>datalist:</label>
+     <input list="sub">
+     <datalist id="sub">
+        <option value="reac">react</option>
+        <option value="nodejs">nodesjs</option>
+     </datalist><br><br>
+     <a href="../assests/images/bird.webp" download="bird.webp">click here</a><br><br>
+    <label>submit:</label>
+    <input type="submit">
+  </form>
+</body>
+</html>

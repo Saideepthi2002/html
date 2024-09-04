@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- <label><b>text attribute:</b></label><br>
+        <input type="text"><br><br>
+        <label><b>radio attribute:</b> Choose any one option</label><br>
+        <input type="radio" name="model" value="kylie">
+        <label>kylie</label>
+        <input type="radio" name="model" value="kendal">
+        <label>kendall</label><br><br>
+    
+        <label><b>check box attribute:</b>Choose more than one option</label><br>
+        <input type="checkbox" name="model1" value="kylie">
+        <label>kim</label>
+        <input type="checkbox" name="model2" value="kendal">
+        <label>kyile</label>
+        <input type="checkbox" name="model3" value="kim">
+        <label>stromi</label>
+        <input type="checkbox" name="model4" value="stromi">
+        <label>kendal</label><br><br>
+        <label>button attribute:</label>
+        <input type="button"><br><br> -->
+        <!-- <label>color attribute:</label>
+        <input type="color"><br><br>
+        <label><b>password attribute:</b></label>
+        <input type="password"><br><br>
+        <input type="button" onclick="alert('Hello form')" value="clik"><br><br>
+        <label><b>date attribute:</b></label>
+        <input type="date" min="22-06-2002"><br><br>
+        <label><b>datetime-local:</b></label>
+        <input type="datetime-local" ><br><br>
+        <label><b>File attribute:</b></label>
+        <input type="file"><br><br>
+        <label><b>Hidden attribute:</b></label>
+        <input type="text">
+        <input type="hidden"><br><br>
+        <label><b>Month attribute:</b></label>
+        <input type="month"><br><br>
+        <label><b>Numeric:</b></label>
+        <input type="number" min="1" max="5"><br><br>
+        <label><b>Search attribute:</b></label>
+        <input type="search"><br><br>
+        <label><b>Mobile Number:</b></label>
+        <input type="tel" placeholder="eg.900-980-9090" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label><b>Time attribute:</b></label>
+        <input type="time"><br><br>
+        <label><b>URL attribute:</b></label>
+        <input type="url"><br><br>
+        <label><b>Image attribute:</b></label>
+        <input type="image" src="../assests/images/micircle.png" height="40" width="40"><br><br>
+        <label><b>Pancard:</b></label>
+        <input type="text" placeholder="eg.abcgd49889">
+        <br><br><label><b>submit attribute:</b></label>
+        <input type="submit"><br><br> --> 
+        <form>
+            <!-- 1-text -->
+             <lable for="sub">Enter Name:</lable>
+             <input type="text" name="sub" id="sub"><br><br>
+             <!-- 2-Radio -->
+            <p>Choose one option:</p>
+            <input type="radio" name="n1"  value="html"id="html">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="n1" value="css" id="css">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="n1" value="js" id="js">
+            <label for="js">Java Script</label><br>
+            <!-- 3-checkbox -->
+            <p>Choose more than one option:</p>
+            <input type="checkbox" name="n1" value="react" id="react">
+            <label for="react">React</label><br>
+            <input type="checkbox" name="n2" value="node.js" id="node.js">
+            <label for="node.js">Node.js</label><br>
+            <input type="checkbox" name="n3" value="python" id="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" name="n4" value="java" id="java">
+            <labe for="java">Java</labe><br>
+            <!-- 4-Email -->
+             <p>Enter email:</p>
+             <input type="mail" name="email" id="email" placeholder="eg.name1234@gmail.com">
+             <label for="email"></label><br><br>
+            <!-- 5-MObile -->
+              <label for="mobile">Enter mobile no:</label>
+              <input type="tel" name="mobile" id="mobile" placeholder="eg.909-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <!-- 6-date -->
+            <lablel for="tt">Date:</lablel>
+            <input type="date" name="n1" id="tt" ><br><br>
+            <!-- 7-datetime-local -->
+             <label for="dt">Date&time:</label>
+             <input type="datetime-local" name="datetime-local" id="dt"><br><br>
+             <!-- 8-time -->
+              <label for="tt">Time:</label>
+              <input type="time" name="time" id="tt"><br><br>
+              <!-- 9-tell-->
+               <label for="mno">enter mobile number:</label>
+               <input type="tel" name="mobile" id="mno" placeholder="eg.900-900-9000" pattern="[0-9]{3}-[0-9]{3}[0-9]{4}"><br><br>
+            <!-- 10-password -->
+             <label for="pw">Password:</label>
+             <input type="password" name="pw" id="pw"><br><br>
+            <!-- 11-number -->
+             <label for="num">Numbers:</label>
+             <input type="number" name="num" id="num" min="1" max="5"><br><br>
+             <!-- 12Button -->
+              <!-- <label for="button">Button:</label>
+              <input type="button" name="button" id="button"> -->
+              <label>Button1:</label>
+              <button type="submit">click</button><br><br>
+              <label>Button2:</label>
+              <input type="button" onclick="alert('hello')" value="onclick"><br><br>
+              <!-- 13-File -->
+              <label for="file">File:</label>
+              <input type="file" name="file" id="file"><br><br>
+              <!-- 14-color -->
+               <label for="color">Color:</label>
+               <input type="color" name="color" id="color"><br><br>
+              <!-- 15-image -->
+              <label for="image">Image:</label>
+              <input type="image" src="../assests/images/zero.jpg" name="image" id="image" height="80" width="80"><br><br>
+              <!-- 16-month -->
+              <label for="month">Month</label>
+              <input type="month" name="month" id="month"><br><br>
+              <!-- 17-hidden -->
+               <label for="hidden">Hidden:</label>
+               <input type="hidden" name="hidden" id="hidden"><br><br>
+               <!-- 18week -->
+                <label for="week">Week:</label>
+                <input type="week" name="week" id="week"><br><br>
+              <!-- 19-search -->
+               <label for="search">Search:</label>
+               <input type="search" name="search" id="search">
+
+              
+              <br><br><input type="submit">
+
+        </form>   
+</body>
+</html>
