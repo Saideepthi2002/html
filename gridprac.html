@@ -1,0 +1,488 @@
+<style>
+    .grd{
+        height: 80vh;
+        width: 65vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    
+    }
+    .md0{
+            height: 25vh;
+            width: 30vw;
+            background-color:darkblue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 10px;
+    }
+    .item01{
+        background-color: coral;
+    }
+    .item02{
+        background-color:lightsalmon;
+    }
+    .item03{
+        background-color: orange;
+    }
+    .item04{
+        background-color:springgreen ;
+    }
+    .item05{
+        background-color:aquamarine ;
+    }
+    .item06{
+        background-color:mediumseagreen ;
+    }
+    .md1{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+       
+    }
+    .item{
+        /* background-color: red; */
+        /* border: 1px solid black; */
+
+    }
+    .item11{
+        background-color:coral;
+        grid-row: 1;
+        grid-column: 1/3;
+      
+    }
+    .item12{
+        background-color:orange;
+        grid-column: 3;
+        grid-row: 1/3;
+      
+    }
+    .item13{
+        background-color:mediumseagreen;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .item14{
+        background-color:springgreen;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .md2{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+
+    }
+    .item21{
+        background-color: darkorange;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .item22{
+        background-color: mediumseagreen;
+        grid-row: 2;
+
+    }
+    .item23{
+        background-color: coral;
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+    .item24{
+        background-color: springgreen;
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+    .md3{background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+    }
+    .item31{
+        background-color: coral;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .item32{
+        background-color:orange;
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+    .item33{
+        background-color: springgreen;
+    }
+    .item34{
+        background-color: aquamarine;
+        grid-row: 2;
+        grid-column: 2/5;
+    }
+    .item35{
+        background-color: lightsalmon;
+        grid-column: 1/5;
+    }
+    .md4{background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(6,1fr);
+        padding: 10px;
+    }
+    .item41{
+        background-color: mediumseagreen;
+    }
+    .item42{
+        background-color:coral;
+    }
+    .item43{
+        background-color: aquamarine;
+    }
+    .item44{
+        background-color:lightsalmon;
+    }
+    .item45{
+        background-color: aquamarine;
+    }
+    .item46{
+        background-color:coral;
+    }
+    .item47{
+        background-color:orange;
+    }
+    .item48{
+        background-color: mediumseagreen;
+    }
+    .item49{
+        background-color:coral ;
+    }
+    .item50{
+        background-color: aquamarine;
+    }
+    .item51{
+        background-color:orange ;
+    }
+    .item52{
+        background-color:lightsalmon;
+    }
+    .item53{
+        background-color:mediumseagreen;
+    }
+    .item54{
+        background-color:lightsalmon;
+    }
+    .item55{
+        background-color:aquamarine ;
+    }
+    .item56{
+        background-color:coral ;
+    }
+    .item57{
+        background-color:mediumseagreen ;
+    }
+    .item58{
+        background-color:aquamarine ;
+    }
+    .md5{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:5;
+        padding: 10px;
+    }
+    .item59{
+        background-color: coral;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .item510{
+        background-color: mediumseagreen;
+        grid-row: 1;
+        /* grid-column: 3; */
+    }
+    .item511{
+        background-color: orange;
+        grid-row: 1;
+        /* grid-column: 4; */
+    }
+    .item512{
+        background-color: orange;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .item513{
+        background-color: mediumseagreen;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .item514{
+        background-color: aquamarine;
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .item515{
+        background-color:lightsalmon;
+        grid-row:3/5;
+        grid-column: 1/3;
+    }
+    .item516{
+        background-color: aquamarine;
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .item517{
+        background-color: mediumseagreen;
+        grid-row: 4;
+        grid-column: 3;
+    }
+    .item518{
+        background-color: coral;
+        grid-row: 3;
+        grid-column: 4;
+    }.item519{
+        background-color: aquamarine;
+        grid-row: 5;
+        grid-column: 1/4;
+    }.item520{
+        background-color: orange;
+        grid-row: 5;
+        grid-column: 4/5;
+    }
+    .md7{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 3;
+        padding: 10px;
+
+    }
+    .item71{
+        background-color: orange;
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+    .item72{
+        background-color: aquamarine;
+        grid-row: 1;
+    }
+    .item73{
+        background-color: coral;
+        grid-row: 2/4;
+
+    }
+    .item74{
+        background-color: mediumspringgreen;
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 2;
+        gap: 5px;
+        padding: 5px;
+        /* width: 10vw;
+        height: 15vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 2; */
+    }
+    .item741{
+        background-color:aqua;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .item742{
+        background-color: aqua;
+    }
+    .item743{
+        background-color:orange;
+    }
+    .md8{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 5;
+        padding: 10px;
+
+        
+    }
+    .item81{
+        background-color: coral;
+    }
+    .item82{
+        background-color: orange;
+    }
+    .item83{
+        background-color: aquamarine;
+    }
+    .item84{
+        background-color: aqua;
+    }
+    .item85{
+        background-color: mediumspringgreen;
+    }
+    .item86{
+        background-color: orange;
+        grid-row: 2;
+    }
+    .item87{
+        background-color: coral;
+        grid-area: 2;
+    }
+    .item88{
+        background-color:lightsalmon;
+        grid-row: 2;
+        grid-column: 3/6;
+    }
+    .item89{
+        background-color: aquamarine;
+        grid-row: 3;
+        grid-column: 1/6;
+    }
+    .md9{
+        background-color:darkblue;
+        width: 30vw;
+        height: 25vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 3;
+        padding: 10px;
+    }
+    .item91{
+        background-color: orange;
+        grid-column: 1/4;
+    }
+    .item92{
+        background-color: mediumspringgreen;
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+    .item93{
+        background-color: aquamarine;
+        grid-column: 2/4;
+    }
+    .item94{
+        background-color: coral;
+    }
+    .item95{
+        background-color: orange;
+    }
+
+    
+    
+</style>
+</head>
+<body>
+<div class="grd">
+    <div class="md0">
+        <div class="item item01"></div>
+        <div class="item item02"></div>
+        <div class="item item03"></div>
+        <div class="item item04"></div>
+        <div class="item item05"></div>
+        <div class="item item06"></div>
+    </div>
+
+<div class="md1">
+    <div class="item item11"></div>
+    <div class="item item12"></div>
+    <div class="item item13"></div>
+    <div class="item item14"></div>
+</div>
+<div class="md2">
+    <div class="item item21"></div>
+    <div class="item item22"></div>
+    <div class="item item23"></div>
+    <div class="item item24"></div>
+</div>
+  <div class="md3">
+    <div class="item item31"></div>
+    <div class="item item32"></div>
+    <div class="item item33"></div>
+    <div class="item item34"></div>
+    <div class="item item35"></div>
+  </div>
+  <div class="md4">
+    <div class="item item41"></div>
+    <div class="item item42"></div>
+    <div class="item item43"></div>
+    <div class="item item44"></div>
+    <div class="item item45"></div>
+    <div class="item item46"></div>
+    <div class="item item47"></div>
+    <div class="item item48"></div>
+    <div class="item item49"></div>
+    <div class="item item50"></div>
+    <div class="item item51"></div>
+    <div class="item item52"></div>
+    <div class="item item53"></div>
+    <div class="item item54"></div>
+    <div class="item item55"></div>
+    <div class="item item56"></div>
+    <div class="item item57"></div>
+    <div class="item item58"></div>
+  </div>
+  <div class="md5">
+    <div class="item item59"></div>
+    <div class="item item510"></div>
+    <div class="item item511"></div>
+    <div class="item item512"></div>
+    <div class="item item513"></div>
+    <div class="item item514"></div>
+    <div class="item item515"></div>
+    <div class="item item516"></div>
+    <div class="item item517"></div>
+    <div class="item item518"></div>
+    <div class="item item519"></div>
+    <div class="item item520"></div>
+  </div>
+  <div class="md7">
+    <div class="item item71"></div>
+    <div class="item item72"></div>
+    <div class="item item73"></div>
+    <div class="item item74">
+        <div class="item item741"></div>
+       <div class="item item742"></div>
+        <div class="item item743"></div></div>
+  </div>
+  <div class="md8">
+    <div class="item item81"></div>
+    <div class="item item82"></div>
+    <div class="item item83"></div>
+    <div class="item item84"></div>
+    <div class="item item85"></div>
+    <div class="item item86"></div>
+    <div class="item item87"></div>
+    <div class="item item88"></div>
+    <div class="item item89"></div>
+  </div>
+  <div class="md9">
+    <div class="item item91"></div>
+    <div class="item item92"></div>
+    <div class="item item93"></div>
+    <div class="item item94"></div>
+    <div class="item item95"></div>
+
+  </div>
+</div>
+</body>
+</html>

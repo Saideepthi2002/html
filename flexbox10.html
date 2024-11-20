@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        background-color: blue;
+        height: 50vh;
+        width: 45vw;
+        display: flex;
+        /* flex-direction: row;
+        gap:5px; */
+        flex-direction: column;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+      .cd {
+        background-color: crimson;
+        height: 25vh;
+        width: 10vw;
+        justify-content: end;
+        
+      }
+      .md0{
+        height: 25vh;
+        width: 20vw;
+        background-color: aqua;
+        position: relative;
+        top:5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .c{
+        height: 10vh;
+        width: 5vw;
+        background-color: blueviolet;
+        border: 1px solid;
+    }
+      
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="cd cd1">item1</div>
+      <div class="cd cd2">item2</div>
+      <div class="cd cd3">item3</div>
+      <div class="cd cd4">item4</div>
+      
+    </div>
+    <div class="md0">
+        <div class="c c1">1</div>
+        <div class="c c2">2</div>
+        <div class="c c3">3</div>
+        <div class="c c4">4</div>
+        <!-- <div class="c c5">5</div>
+        <div class="c c6">6</div>
+        <div class="c c7">7</div>
+        <div class="c c8">8</div> -->
+    </div>
+  </body>
+</html>

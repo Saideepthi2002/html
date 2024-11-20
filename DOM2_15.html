@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div1 = document.createElement("div");
+      div1.style.height = "70vh";
+      div1.style.width = "50vw";
+      div1.style.border = "2px solid black";
+      document.body.appendChild(div1);
+    //   let name = document.createElement("h1");
+    //   name.innerHTML = "username";
+    //   div1.appendChild(name);
+    //   let image = document.createElement("img");
+    //   img.setAttribute("src", "");
+    //   div1.append(image);
+    // creating element on dom
+    let img=document.createElement('img')
+    img.setAttribute('src','../assests/images/cam.jpg')
+    // appending img into div 1
+    div1.append(img)
+    img.style.height='100px'
+    img.style.width='100px'
+
+    // creating div2 element
+    let div2=document.createElement('div')
+    // set height and width of div2 element
+    div2.style.height='70vh'
+    div2.style.width='50vw'
+    div2.style.border='2px solid black'
+    // append div2 elemet as sibling element into body
+    document.body.appendChild(div2)
+
+    let maindiv=document.createElement('div')
+    document.body.appendChild(maindiv)
+    maindiv.appendChild(div1)
+    maindiv.appendChild(div2)
+    maindiv.style.display='flex'
+    let img1=document.createElement('img')
+    img1.setAttribute('src','../assests/images/food.jpg')
+    div2.append(img1)
+    img1.style.height='100px'
+    img1.style.width='100px'
+    </script>
+  </body>
+</html>

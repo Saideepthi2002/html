@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 2px solid black;
+            height: 40vh;
+            width: 30vw;
+            display: inline-block;
+            perspective: 300px;
+            padding: 30px;
+        }
+        .item1{
+            border: 2px solid black;
+            height: 20vh;
+            width: 20vw;
+            display: inline-block;
+            /* perspective: 300px; */
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            /* transform: rotate(45deg); */
+            display:inline-block;
+            border: 2px solid red;
+        }
+        .div:active>.item img{
+            transform: rotatey(120deg)  translate(120px) scale(2,2);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="item div">
+        <div class="item item1"><img src="../assests/images/balcony.avif"></div>
+    </div>
+    
+
+</body>
+</html>

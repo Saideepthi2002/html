@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            background-color: aqua;
+            width: 60vw;
+            height: 60vh;
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-columns: repeat(3,50px);
+            grid-template-rows: 120px 190px; */
+            /* grid-template-columns: repeat(3,auto); */
+            grid-template-rows: 100px 100px;
+            grid-template-columns: 90px 90px;
+
+            gap: 10px;
+            /* align-content:center;
+            justify-content: center; */
+        }
+        .item{
+            background-color: red;
+            border: 1px solid black;
+        }
+        .item1{
+            background-color: blue;
+        }
+        .item2{
+            background-color:brown;
+        }
+        .item3{
+            background-color:aqua;
+        }
+        .item4{
+            background-color: chartreuse;
+        }
+        .item5{
+            background-color:darkcyan;
+        }
+        .item6{
+            background-color: deeppink;
+            /* grid-column-start:2;
+            grid-column-end: 5; */
+            grid-column: 2/5;
+        }
+        .item7{
+            background-color: green;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 2/4;
+        }
+        .item8{
+            background-color: lightslategrey;
+            /* grid-row-start: 2;
+            grid-row-end: 5; */
+            grid-row: 2/5;
+        }
+        .item9{
+            background-color: coral;
+            /* grid-column-start: 3;
+            grid-column-end: 5; */
+            grid-column: 3/5;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+       <!-- <div class="item item1">item1</div>
+       <div class="item item2">item2</div>
+       <div class="item item3">item3</div>
+       <div class="item item4">item4</div>
+       <div class="item item5">item5</div> -->
+       <div class="item item6">item6</div>
+       <div class="item item7">item7</div>
+       <div class="item item8">item8</div>
+       <div class="item item9">item9</div>
+    </div>
+</body>
+</html>

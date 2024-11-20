@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .md{
+            display: grid;
+            grid-template-areas: 
+            "area1 area2 area3"
+            "area4 area2 area5"
+            "area6 area7 area8";
+            gap:5px;
+            border: 2px solid black;
+            padding: 20px;
+        } */
+        @media screen and (min-width:768px)
+        {
+            .md{
+            display: grid;
+            grid-template-areas: 
+            "area1 area2 area3"
+            "area4 area2 area5"
+            "area6 area7 area8"
+            "area9 area7 area10"
+            ;
+            height: 50vh;
+            width: 40vw;
+            gap:5px;
+            padding: 10px;
+            margin: auto;
+           
+            } 
+            
+        }
+        @media screen and (min-width:300px) and (max-width:767px)
+        {
+            .md{
+            display: grid;
+            grid-template-areas: 
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8"
+            "area9 area10";
+            gap:10px;
+            } 
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .item1{
+            grid-area: area1;
+        }
+        .item2{
+            grid-area: area2;
+        }
+        .item3{
+            grid-area: area3;
+        }
+        .item4{
+            grid-area: area4;
+        }
+        .item5{
+            grid-area: area5;
+        }
+        .item6{
+            grid-area: area6;
+        }
+        .item7{
+            grid-area: area7;
+        }
+        .item8{
+            grid-area: area8;
+        }
+        .item9{
+            grid-area: area9;
+        }
+        .item10{
+            grid-area: area10;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="md">
+        <img src="../assests/images/balcony.avif" class="item item1">
+        <img src="../assests/images/bird.webp" class="item item2">
+        <img src="../assests/images/flower.jpg" class="item item3">
+        <img src="../assests/images/food.jpg" class="item item4">
+        <img src="../assests/images/horse.jpg" class="item item5">
+        <img src="../assests/images/travel.jpg" class="item item6">
+        <img src="../assests/images/cam.jpg" class="item item7">
+        <img src="../assests/images/tajmahal.jpeg" class="item item8">
+        <img src="../assests/images/flower.jpg" class="item item9">
+        <img src="../assests/images/food.jpg" class="item item10">
+
+
+    </div>
+    
+</body>
+</html>

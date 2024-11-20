@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            .md{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap:30px;
+                background-color: aqua;
+                height:80vh;
+                width: 100vw;
+                border: 1px solid red;
+
+            }
+            .box1,.box2,.box3,.box4{
+            border: 1px solid gray;
+            height: 65vh;
+            width:90vw;
+            border-radius: 10px;
+        }
+        .imgi{
+            width: 74.3vw;
+            height: 24.41vh;
+            border-radius: 10px;
+        }
+        .box11,.box21,.box31,.box41{
+            display: flex;
+            justify-content: center;
+            /* background-color: pink; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .div2{
+            /* background-color: blanchedalmond; */
+            display: flex;
+            transform: translate(0%,30%);
+            justify-content: center;
+            /* background-color: aqua; */
+        }
+        .div4icon1{
+            /* height: 70%;
+            width:70%; */
+            height: 36px;
+            width: 36px;
+            font: 16px;
+            background: #F7F7F7;
+            color:#212529;
+            /* background-color:grey; */
+            transform: translate(0px,20px);
+        }
+        .right{
+            font-family:sans-serif;
+            transform: translate(25px,0px);
+        }
+        .h4cls{
+            color: #2a2a2a;
+            font: 20px;
+        }
+        .spancls{
+            color: #afafaf;
+            font: 16px;
+          
+        }
+        .num{
+            font:15px;
+            background: #FFFFFF;
+            padding: 5px 8px;
+            margin:0px 10px 0px 0px;
+            /* transform: translate(-20px,0px); */
+        }
+        .div3{
+            display: flex;
+            transform: translate(0%,200%);
+            justify-content: center;
+            /* background-color: cornflowerblue; */
+            
+        }
+        .b{
+            width: 73.9vw;
+            height: 6.63vh;
+            border: 1px solid #00BDFE;
+            border-radius: 10px;
+            color:#00BDFE;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size:14px;
+            text-align: center;
+            line-height: 3;
+            
+        }
+        @media screen and (min-width:619px) and (max-width:1008px){
+            .md{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:30px;
+                background-color: aqua;
+                height:100vh;
+                width: 200vw;
+                border: 1px solid red;
+            }
+        }
+        /* @media screen and (min-width:300px) and (max-width:618px){
+            .md{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap:30px;
+                background-color: aqua;
+                height:80vh;
+                width: 100vw;
+                border: 1px solid red;
+
+            }
+        } */
+        @media screen and (min-width:300px) and (max-width:618px){
+            .md{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:30px;
+                background-color: aqua;
+                height:80vh;
+                width: 100vw;
+                border: 1px solid red;
+
+            }
+        }
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="md">
+    <!-- box1 -->
+    <div class="box1">
+        <div class="box11">
+            <div><img class="div4icon1"src="../assests/images/div4pica.png"></div>
+            <div class="right">
+                    <h4 class="h4cls">Nature Pic Contest</h4>
+                    <span class="spancls"><b class="num" style="color: #00BDFE;">126 </b> Available Contests</span>
+            </div>
+        </div>
+        <div class="div2"><img class="imgi"src="../assests/images/naturepic1.jpg"></div>
+        <div class="div3"><div class="b">Browse Nature Pic Contests</div></div>
+    </div>
+    <!-- box2 -->
+    <div class="box2">
+        <div class="box21">
+            <div><img class="div4icon1"src="../assests/images/div4pic2.png"></div>
+            <div class="right">
+                    <h4 class="h4cls">Random Pic Contest</h4>
+                    <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+            </div>
+        </div>
+        <div class="div2"><img class="imgi"src="../assests/images/randompic2.png"></div>
+        <div class="div3"><div class="b">Browse Random Pic Contests</div></div>
+    </div>
+    <!-- box3 -->
+    <div class="box3">
+        <div class="box31">
+            <div><img class="div4icon1"src="../assests/images/div4pic3.png"></div>
+            <div class="right">
+                    <h4 class="h4cls">Portrait Pic Contest</h4>
+                    <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+            </div>
+        </div>
+        <div class="div2"><img class="imgi"src="../assests/images/portraitpic3.png"></div>
+        <div class="div3"><div class="b">Browse Portrait Pic Contests</div></div>
+    </div>
+    <!-- box4 -->
+    <div class="box4">
+        <div class="box41">
+            <div><img class="div4icon1"src="../assests/images/div4pic4.png"></div>
+            <div class="right">
+                    <h4 class="h4cls">Space Pic Contest</h4>
+                    <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+            </div>
+        </div>
+        <div class="div2"><img class="imgi"src="../assests/images/spacepic4.png"></div>
+        <div class="div3"><div class="b">Browse Space Pic Contests</div></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

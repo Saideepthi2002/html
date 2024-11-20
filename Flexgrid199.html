@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            display: flex;
+            gap: 10px;
+        }
+        .mdrow{
+            border: 2px solid black;
+            height: 50vh;
+            width: 30vw;
+            background-color: crimson;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            justify-content: center;
+            gap:20px;
+            padding:20px;
+            flex-wrap: wrap;
+        }
+        .d{
+            border: 1px solid green;
+            height: 30%;
+            width:20%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .divrow1{
+            background-color: aqua;
+        }
+        .divrow2{
+            background-color: blue;
+        }
+        .divrow3{
+            background-color: chartreuse;
+        }
+        .divrow4{
+            background-color: darkmagenta;
+        }
+        .d{
+            border: 1px solid green;
+            height: 30%;
+            width:20%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .mdcol{
+            border: 2px solid black;
+            height: 50vh;
+            width: 30vw;
+            background-color: hotpink;
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            align-content:space-between;
+            gap: 5px;
+         }
+        .dvcol1{
+            background-color: darkred;
+
+        }
+        .dvcol2{
+            background-color: cornflowerblue;
+            justify-items: end;
+        }
+        .dvcol3{
+            background-color: darkolivegreen;
+        }
+        .dvcol4{
+            background-color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+    <!-- <div class="mdrow">
+        <div class="d divrow1">a</div>
+        <div class="d divrow2">b</div>
+        <div class="d divrow3">c</div>
+        <div class="d divrow4">d</div>
+        <div class="d divrow3">c</div>
+        <div class="d divrow4">d</div>
+
+    </div> -->
+    <br>
+    <div class="mdcol">
+        <div class="d dvcol1">A</div>
+        <div class="d dvcol2">B</div>
+        <div class="d dvcol3">C</div>
+        <div class="d dvcol4">D</div>
+        <div class="d dvcol3">C</div>
+        <div class="d dvcol4">D</div>
+    </div>
+</div>
+</body>
+</html>

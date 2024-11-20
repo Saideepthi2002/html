@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div_id1">
+      <h2 id="h1_id1">Click Buttons</h2>
+      <div id="sub_div"><img id="img_id1" /></div>
+    </div>
+    <br />
+    <button onclick="vijay()">VijayT</button>
+    <button onclick="anushka()">AnushkaS</button>
+    <button onclick="virat()">ViratK</button>
+    <script>
+      let name = document.getElementById("h1_id1");
+      name.style.color = "orange";
+      name.style.padding = "20px 60px";
+      let div1 = document.getElementById("div_id1");
+      div1.style.border = "2px solid orange ";
+      div1.style.height = "70vh";
+      div1.style.width = "50vw";
+      div1.style.backgroundColor = "";
+      let div2 = document.getElementById("sub_div");
+      div2.style.display = "flex";
+      div2.style.justifyContent = "center";
+
+      let img = document.getElementById("img_id1");
+      img.setAttribute("src", "../assests/images/bird.webp");
+      img.style.height = "200px";
+      function vijay() {
+        img.setAttribute("src", "../assests/images/vijay.webp");
+        img.style.height = "150px";
+        name.innerHTML = "Vijay Thala";
+        name.style.color = "green";
+        div1.style.border = "2px solid green";
+         div1.style.backgroundColor='pink'
+      }
+      function anushka() {
+        img.setAttribute("src", "../assests/images/anushkasharma3.jpg");
+        img.style.height = "200px";
+        name.innerHTML = "AnushkaSharma";
+        name.style.color = "blue";
+        div1.style.border = "2px solid blue";
+        // div1.style.backgroundImage='../assests/images/cam.jpg'
+        div1.style.backgroundColor='violet'
+      }
+      function virat() {
+        img.setAttribute("src", "../assests/images/virat.jpg");
+        name.innerHTML = "Virat Kholi";
+        name.style.color = "red";
+        div1.style.border = "2px solid red";
+         div1.style.backgroundColor='pink'
+      }
+    </script>
+  </body>
+</html>

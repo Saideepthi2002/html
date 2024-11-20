@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="id1">HEllo</h1>
+    <script>
+        let x=document.getElementById('id1')
+        x.style.color='red'
+    </script> -->
+    <h1 id='id1' onclick="demo()">Hello</h1>
+    <button onclick="html()">HTML</button>
+    <button onclick="css()">CSS</button>
+    <button onclick="js()">JS</button>
+    <script>
+        // let x=document.getElementById('id1')
+        // x.style.color='red'
+        let x=document.getElementById('id1')
+        function demo(){
+            //  let x=document.getElementById('id1')
+             x.style.color='red'
+        }
+        function html(){
+            x.innerHTML='HTML'
+        }
+        function css(){
+            x.innerHTML='CSS'
+        }
+        function js(){
+            x.innerHTML='JS'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            width: 80vw;
+            height: 70vh;
+            border: 3px solid red;
+        }
+        /* small device:0px-320px */
+        @media screen and (min-width:375px)
+        {
+            .img1{
+             
+                display: none;
+            }
+        }
+        /* medium device:321px-450px */
+        @media screen and (min-width:376px) and (max-width:600px)
+        {
+            .img2{
+               
+                display: none;
+            }
+        }
+        /* @media screen and (min2-width:451px){
+            .md{
+                background-color: blue;
+            }
+        } */
+        img{
+            width:80vw;
+            height:50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <img class="img1" src="../assests/images/bird.webp" >
+        <img class="img2" src="../assests/images/tajmahal.jpeg" >
+        
+    </div>
+</body>
+</html>

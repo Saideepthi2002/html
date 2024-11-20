@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function random(){
+        //     let n=''
+        //     for(i=0;i<6;i++){
+        //         n=n+Math.floor
+        //     }
+        // }
+        function getRandomColor() {
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                // color += Math.floor((Math.random() * 16)).toString(16);
+                color +=Math.floor(Math.random()*16).toString(16);
+            }
+            return color;
+        }
+        console.log(getRandomColor())
+        // console.log('#12'.toString())
+    </script>
+</body>
+</html>

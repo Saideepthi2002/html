@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .four_box{
+            height: 10vh;
+            width: 55vw;
+            /* border: 1px solid black; */
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-areas:
+            "area1 area2"
+            "area3 area4";
+            gap:10px;
+        }
+        .item{
+            border: 1px solid grey;
+            height: 25vh;
+            width: 30vw;
+            border-radius: 10px;
+            background-color:white;
+            /* display: flex; */
+            /* justify-content: space-between; */
+            
+        }
+        .img{
+            /* border: 1px solid black; */
+            height: 5vh;
+            width: 7vw;
+            background-color:#F7F7F7;
+            border-radius: 5px;
+            position: relative;
+            top:17px;
+            left:10px;
+        }
+        .imgi{
+            position: relative;
+            top:5px;
+            left:7px;
+           
+        }
+        .text2{ 
+            height: 4vh;
+            width: 15vw;
+            /* border: 1px solid black; */
+            /* background-color: chartreuse; */
+            font: 20px;
+            font-size: x-small;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2A2A2A;
+            text-align:start;
+            position: relative;
+            top:10px;
+        }
+        pre{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #AFAFAF;
+            font: 16px;
+            font-size: xx-small;
+            position: relative;
+            bottom: 17px;
+        }
+        .item1{
+            grid-area: area1;
+        }
+        .div1_item{
+            height: 10vh;
+            width: 30vw;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .item2{
+            grid-area: area2;
+        }
+        .item3{
+            grid-area: area3;
+        }
+        .item4{
+            grid-area: area4;
+        }
+        .pic{
+            /* border: 1px solid black; */
+            height: 10vh;
+            width: 25vw;
+            border-radius: 10px;
+            position: relative;
+            left:19px;
+            bottom: 30px;
+            
+        }
+        .nature_pic{
+            height: 10vh;
+            width: 25vw;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            
+        }
+        .browse{
+            border: 1px solid #00bdfe;
+            height: 1vh;
+            width: 18vw;
+            border-radius: 10px;
+            font: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:xx-small;
+            color: #00bdfe;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+            bottom: 15px;
+            left:19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="four_box">
+        <div class="item item1">
+            <div class="div1_item">
+              <div class="img">
+                <img class="imgi"src="../assests/images/div4pica.png"height="30px" width="30px">
+            </div>
+              <div><h2 class="text2">Nature Pic Contest</h2>
+               <pre><b style="color: #00bdfe;">126</b>    Available Contests</pre>
+               </div>
+            </div><br>
+            <div class="pic"><img class="nature_pic" src="../assests/images/naturepic1.jpg"></div>
+            <div class="browse"> Browse Nature Pic Contest</div>
+
+        </div>
+        <div class="item item2">
+            <div class="div1_item">
+                <div class="img">
+                  <img class="imgi"src="../assests/images/div4pic2.png"height="30px" width="30px">
+              </div>
+                <div><h2 class="text2">Random Pic Contest</h2>
+                 <pre><b style="color: #00bdfe;">116</b>    Available Contests</pre>
+                 </div>
+              </div><br>
+              <div class="pic"><img class="nature_pic" src="../assests/images/randompic2.png"></div>
+              <div class="browse"> Browse Nature Pic Contest</div>
+        </div>
+        <div class="item item3">
+            <div class="div1_item">
+                <div class="img">
+                  <img class="imgi"src="../assests/images/div4pic3.png"height="30px" width="30px">
+              </div>
+                <div><h2 class="text2">Portrait Pic Contest</h2>
+                 <pre><b style="color: #00bdfe;">164</b>    Available Contests</pre>
+                 </div>
+              </div><br>
+              <div class="pic"><img class="nature_pic" src="../assests/images/portraitpic3.png"></div>
+              <div class="browse"> Browse Nature Pic Contest</div>
+        </div>
+        <div class="item item4">
+            <div class="div1_item">
+                <div class="img">
+                  <img class="imgi"src="../assests/images/div4pic4.png"height="30px" width="30px">
+              </div>
+                <div><h2 class="text2">Space Pic Contest</h2>
+                 <pre><b style="color: #00bdfe;">126</b>    Available Contests</pre>
+                 </div>
+              </div><br>
+              <div class="pic"><img class="nature_pic" src="../assests/images/spacepic4.png"></div>
+              <div class="browse"> Browse Nature Pic Contest</div>
+        </div>
+
+    </div>
+</body>
+</html>

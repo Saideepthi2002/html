@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        /* border: 2px solid black; */
+        height: 80vh;
+        width: 70vw;
+        display: flex;
+        /* flex-wrap: wrap; */  
+      }
+      .img {
+        border: 2px solid red;
+        height: 200px;
+        width: 100px;
+        border-radius: 10px;
+      }
+      .cd {
+        /* transition: width 2s, height 2s transform 2s; */
+        transition: width 2s;
+      }
+      .img:hover {
+        width: 300px;
+        height: 300px;
+        /* transform: rotate(60deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="cd div1">
+        <img class="img" src="../assests/images/goat1.jpg" />
+      </div>
+      <div class="cd div2">
+        <img class="img" src="../assests/images/goat2.jpg" />
+      </div>
+      <div class="cd div3">
+        <img class="img" src="../assests/images/goat3.png" />
+      </div>
+      <div class="cd div4">
+        <img class="img" src="../assests/images/goat4.jpg" />
+      </div>
+      <div class="cd div5">
+        <img class="img" src="../assests/images/goat5.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+        }
+        input:checked+div .car1{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+        }
+        input:checked+div .car2{
+            transform: translate(300px);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: steps(3);
+        }
+        /* input:checked+div .car3{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function:ease;
+        } */
+        input:checked+div .car4{
+            transform: translate(200px);
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function:ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio">
+    <div>
+        <img class="car1" src="../assests/images/car.jpg"><br><br>
+        <img class="car2"src="../assests/images/car.jpg"><br><br>
+        <!-- <img class="car3" src="../assests/images/car.jpg"><br><br> -->
+        <img  class="car4"src="../assests/images/car.jpg"><br><br>
+    </div>
+</body>
+</html>

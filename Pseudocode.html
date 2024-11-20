@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover{
+            color: blue;
+        }
+        h2:active{
+            color:brown
+        }
+        /* hover on that link/content */
+        a:hover{
+            color:chocolate;
+            text-decoration: none;
+            /* the text-decoration:none is used to remove the under line of clickme */
+        }
+        /* a link not visited yet */
+        a:link{
+            color: chartreuse;
+        }
+        /* a link is visited atleast once */
+        a:visited{
+            color: deeppink;
+        }
+        .css:active{
+            background-color: rgb(13, 0, 255);
+            font-size: 100px;
+
+        }
+        /* click on parent then the color of the child should change */
+        #pd{
+            border: 2px solid black;
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            padding: 50px ;
+        }
+        #cd{
+            border: 2px solid red;
+            height: 70%;
+            width: 70%;
+            background-color: aquamarine;
+        }
+        #pd:active #cd{
+            background-color:darkgreen;
+        }
+        #btn{
+            background-color: aqua;
+            font-size: 40px;
+            color: blue;
+            border-radius: 40px;
+            padding: 40px;
+            border: none;
+        }
+        #btn:hover{
+            color: darkorange;
+            background-color: maroon;
+        }
+        p{
+            display:none
+        }
+        #btn:active ~ p{
+            display: block;
+        }
+        /* pseudo focus is used to style the input elemnts in the forms */
+        input:focus{
+            background-color: brown;
+            border: 2px solid greenyellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello:  </h1>
+    <p>Hello<mark>(hover pseudo)</mark>shows the color blue when we hover on hello using pseudo "hover"</p>
+    <h2>Hola:</h2>
+    <p>Hola <mark>(active pseudo)</mark>it change the color of holo when we click on "Holo",when we click and hold that is in active mode, once we unclick then the color is not visible only visible if click and hold on the "Holo</p>
+    <a href="https://en.wikipedia.org/wiki/Floods_in_India">click me</a><br><br>
+    <a class="css" href="https://en.wikipedia.org/wiki/Floods_in_India">click</a>
+    <div id="pd">
+        <div id="cd"></div>
+    </div><br>
+    <button id="btn">Clickme</button>
+    <p>This is the button(tooltip)</p><br><br>
+    <form>
+        <input type="text">
+    </form>
+</body>
+</html>
+<!-- Display:none to hide the content in the web page,display none remove both the space and the content -->
+ <!-- visibility return also hide/remove the content but the only difference between the display none and visibility return is, the visibility return only remove/hide the content but preserve the spaces where as the display none does both it hides/remove both the space and the content. -->

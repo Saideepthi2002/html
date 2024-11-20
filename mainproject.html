@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:320px) and (max-width:750px)
+        {
+            .maindiv{
+            width:100vw;
+            border: 1px solid transparent;
+            height:200vh;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid green; */
+            /* display: flex; */
+            /* background-color:aqua; */
+        }
+        .div1{
+           /* min-height: 30px;
+           max-height: 70px; */
+           /* min-width: 30px;
+           max-width: 100vw; */
+           /* max-width:800px; */
+           /* height: 30vh; */
+           width: 100vw;
+           display: flex;
+           background-color: white;
+           justify-content: space-evenly;
+        }
+        .img1{
+         align-self: center;
+         line-height: 10;
+    
+        }
+        .subdiv12{
+            display: flex;
+            gap:20px;
+            background-color:deepskyblue;
+            justify-content: space-evenly;
+            width: 53vw;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+        .blu{
+            align-self: center;
+        }
+        .svg1{
+    
+            width: 45%;
+            align-self: center;
+            display:inline;
+        }
+        .two{
+            display: flex;
+            /* justify-content: center; */
+        }
+        .two1{
+            align-self: center;
+        }
+        /* .subdiv13{
+            align-self: center;
+        }
+
+        button{
+            background-color: white;
+            color: deepskyblue;
+            border: 1px solid deepskyblue;
+            border-radius: 6px;
+            
+        } */
+         .a{
+            background-color: white;
+            color: deepskyblue;
+            border: 1px solid deepskyblue;
+            border-radius: 6px;
+            align-self: center;
+         }
+        .img2{
+            height: 10%;
+            width: 10%;
+        }
+        strong{
+            align-self: center;
+        } 
+        .img3{
+            height:100%;
+            width:100%;
+        }
+        .div2{
+            display: flex;
+
+        }
+        .mainbackgroundimg{
+        position: relative;
+        text-align: center;
+        color: white; 
+        /* background-color: aquamarine; */
+            /* background-image: url(../assests/images/backgroundimg.jpg); */
+            width:100vw;
+            height: 60vh;
+     }
+     .text{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+       img{
+        height: 100%;
+        width: 100%;
+       }
+    .para1{
+        font-size:x-small;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .s2{
+        display: flex;
+        justify-content: center;
+        gap:5%;
+        /* position: absolute;
+        top:100%;
+        left:15%; */
+    }
+    .button2{
+        border: 1px solid white;
+        height: 8vh;
+        width: 20vw;
+        border-radius: 10px;
+        line-height: 3.2;
+        font-size: medium;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+       
+        /* align-self: center; */
+        /* opacity: 10px; */
+    }
+    .b4{
+        /* border: 1px solid white; */
+        height: 8vh;
+        width: 20vw;
+        border-radius: 6px;
+        line-height: 4;
+        font-size:small;
+        /* font-weight: bold; */
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .svg2{
+        height: 20%;
+        width: 20%;
+    }
+    .i{
+        height: 200%;
+    }
+    .div3{
+        width:100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: -280px;
+        /* left: 0px; */
+        gap:10px;
+    }
+    .imgpic{
+        width:25vw;
+        height:25vh;
+        /* width: 30px; */
+        border-radius: 7%;
+    }
+    .mmd{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                /* display: flex;
+                flex-direction: column; */
+                gap:30px;
+                /* background-color: aqua; */
+                height:100%;
+                width: 100%;
+                border: 1px solid red;
+
+            }
+            .box1,.box2,.box3,.box4{
+            border: 1px solid gray;
+            height: 65vh;
+            width:90vw;
+            border-radius: 10px;
+        }
+        .imgi{
+            width: 74.3vw;
+            height: 24.41vh;
+            border-radius: 10px;
+        }
+        .box11,.box21,.box31,.box41{
+            display: flex;
+            justify-content: center;
+            /* background-color: pink; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .div2{
+            /* background-color: blanchedalmond; */
+            display: flex;
+            transform: translate(0%,30%);
+            justify-content: center;
+            /* background-color: aqua; */
+        }
+        .div4icon1{
+            /* height: 70%;
+            width:70%; */
+            height: 36px;
+            width: 36px;
+            font: 16px;
+            background: #F7F7F7;
+            color:#212529;
+            /* background-color:grey; */
+            transform: translate(0px,20px);
+        }
+        .right{
+            font-family:sans-serif;
+            transform: translate(25px,0px);
+        }
+        .h4cls{
+            color: #2a2a2a;
+            font: 20px;
+        }
+        .spancls{
+            color: #afafaf;
+            font: 16px;
+          
+        }
+        .num{
+            font:15px;
+            background: #FFFFFF;
+            padding: 5px 8px;
+            margin:0px 10px 0px 0px;
+            /* transform: translate(-20px,0px); */
+        }
+        .div3{
+            display: flex;
+            transform: translate(0%,200%);
+            justify-content: center;
+            /* background-color: cornflowerblue; */
+            
+        }
+        .b{
+            width: 73.9vw;
+            height: 6.63vh;
+            border: 1px solid #00BDFE;
+            border-radius: 10px;
+            color:#00BDFE;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size:14px;
+            text-align: center;
+            line-height: 3;
+            
+        }
+        .div4{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+       
+        transform: translate(0px,-150px);
+      }
+      .subdiv41{
+        width:100vw;
+        background-color: blueviolet;
+        display: flex;
+        /* align-content: space-between; */
+        justify-content:space-evenly;
+      }
+      .subdiv41a{
+        width: 60vw;
+        height: 20vh;
+        /* transform: translate(0px,-30px); */
+        background-color: chartreuse;
+      }
+      .h6text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:x-small;
+        transform:translate(-199px,2px)
+    
+      }
+      .h3text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:larger;
+        transform: translate(-199px,10px);
+      }
+      .button4{
+        background-color: deepskyblue;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border: 1px solid deepskyblue;
+        border-radius: 5px;
+        align-self:flex-end;
+        height:7vh;
+        width: 15vw;
+        transform: translate(230px,30px);
+      }
+      .subdiv42{
+        background-color:coral;
+        width: 100vw;
+        height: 60vh;
+      }
+      .subdiv42a{
+        display: flex;
+        border: 1px solid black;
+        background-color: white;
+        height:50vh;
+        width:30vw;
+        border-radius:10px;
+        transform: translate(10px,10px);
+        justify-content: space-evenly;
+      }
+      .div4img1{
+        height: 20%;
+        width: 30%;
+      }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+            <div class="div1">
+                <div class="subd1 subdiv11"><img class="img1" src="../assests/images/logo.png"></div>
+                <div class="subd1 subdiv12">
+                    <div class="blu">HOME</div>
+                    <div class="two">
+                        <div class="two1">PHOTOS & VIDEOS</div>
+                        <div class="two2"><svg class="svg1" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="none" d="M0 0h24v24H0z"></path> <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"></path> </g> </g></svg></div>
+                    </div>
+                    <div class="blu">CATEGORIES</div>
+                    <div class="blu">USERSG</div>
+                </div>
+                <div class="a subdiv13">
+                    <button class="a"><img class="img2" src="../assests/images/b3p.png"><strong>Sign In/Up</strong></button>
+                </div>
+            </div>
+            <div class="mainbackgroundimg"><img class="i"src="../assests/images/backgroundimg.jpg">
+                <div class="text"><h2>Enter the world of <b style="color: deepskyblue;">Photos</b> and Amazing <br> <b style="color: deepskyblue;">Awards</b><br><br><hr><p class="para1">SnapX Photography is a professional website template with 5 different HTML pages for maximum customizations. It is free for commercial usage. This Bootstrap v5.1.3 CSS layout is provided by TemplateMo Free CSS Templates.</p></h2><br>
+                    <div class="s2">
+                                 <div class="button2">Explore Snapx Contest</div>
+                                <div class="b4"><svg class="svg2"fill="#ffffff" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M500.203,236.907L30.869,2.24c-6.613-3.285-14.443-2.944-20.736,0.939C3.84,7.083,0,13.931,0,21.333v469.333 c0,7.403,3.84,14.251,10.133,18.155c3.413,2.112,7.296,3.179,11.2,3.179c3.264,0,6.528-0.747,9.536-2.24l469.333-234.667 C507.435,271.467,512,264.085,512,256S507.435,240.533,500.203,236.907z"></path> </g> </g> </g></svg>Watch Our Video Now</div>
+                    </div>
+             </div>
+            </div>
+            <div class="div3">
+                <div class="pic pic1"><img class="imgpic div3pic1" src="../assests/images/pic1.jpg"></div>
+                <div class="pic pic2"><img class="imgpic div3pic2" src="../assests/images/pic3.jpg"></div>
+                <div class="pic pic3"><img class="imgpic div3pic3" src="../assests/images/pic2.jpg"></div>
+            </div>
+            <!-- div4 -->
+            <div class="div4">
+                <div class="subdiv41">
+                    <div><h6 class="h6text"><b style="color: deepskyblue;">OUR CATAGORIES</b></h6>
+                    <h2 class="h3text">Check Out<b style="color: deepskyblue;"> Popular</b> Contest <b style="color: deepskyblue;">Categories</b></h2></div>
+                    <div><button class="button4">Discover all Categories</button></div>
+                </div>
+                <div class="subdiv42">
+                    <div class="subdiv42a">
+                        <div><img class="div4img1" src="../assests/images/div4pica.png"></div>
+                        <div><h4>Nature Pic Contest</h4></div><br>
+                    </div>
+                </div>
+            <div class="mmd">
+                <div class="box1">
+                    <div class="box11">
+                        <div><img class="div4icon1"src="../assests/images/div4pica.png"></div>
+                        <div class="right">
+                                <h4 class="h4cls">Nature Pic Contest</h4>
+                                <span class="spancls"><b class="num" style="color: #00BDFE;">126 </b> Available Contests</span>
+                        </div>
+                    </div>
+                    <div class="div2"><img class="imgi"src="../assests/images/naturepic1.jpg"></div>
+                    <div class="div3"><div class="b">Browse Nature Pic Contests</div></div>
+                </div>
+                <!-- box2 -->
+                <div class="box2">
+                    <div class="box21">
+                        <div><img class="div4icon1"src="../assests/images/div4pic2.png"></div>
+                        <div class="right">
+                                <h4 class="h4cls">Random Pic Contest</h4>
+                                <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+                        </div>
+                    </div>
+                    <div class="div2"><img class="imgi"src="../assests/images/randompic2.png"></div>
+                    <div class="div3"><div class="b">Browse Random Pic Contests</div></div>
+                </div>
+                <!-- box3 -->
+                <div class="box3">
+                    <div class="box31">
+                        <div><img class="div4icon1"src="../assests/images/div4pic3.png"></div>
+                        <div class="right">
+                                <h4 class="h4cls">Portrait Pic Contest</h4>
+                                <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+                        </div>
+                    </div>
+                    <div class="div2"><img class="imgi"src="../assests/images/portraitpic3.png"></div>
+                    <div class="div3"><div class="b">Browse Portrait Pic Contests</div></div>
+                </div>
+                <!-- box4 -->
+                <div class="box4">
+                    <div class="box41">
+                        <div><img class="div4icon1"src="../assests/images/div4pic4.png"></div>
+                        <div class="right">
+                                <h4 class="h4cls">Space Pic Contest</h4>
+                                <span class="spancls"><b class="num" style="color: #00BDFE;">116 </b> Available Contests</span>
+                        </div>
+                    </div>
+                    <div class="div2"><img class="imgi"src="../assests/images/spacepic4.png"></div>
+                    <div class="div3"><div class="b">Browse Space Pic Contests</div></div>
+                </div>
+            </div>
+            
+             
+    </div>
+</body>
+</html>

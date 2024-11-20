@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animi{
+            from{ background-color: red;
+                border: 2px solid yellow;
+                /* transform: translate(120px); */
+
+            }
+            to{
+                background-color: green;
+                border: 10px solid blueviolet;
+                transform: translate(120px);
+            }
+        }
+        .mydiv{
+            height: 125px;
+            width: 125px;
+            border: 1px solid;
+            animation-name: animi;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-direction: alternate-reverse; */
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+</body>
+</html>

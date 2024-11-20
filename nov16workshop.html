@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+        <button id='b1' onclick="randomcolor()">click</button>
+    </div>
+    <script>
+        
+        let div1=document.getElementById('id1')
+        div1.style.border='2px solid black'
+        div1.style.height='60vh'
+        div1.style.width='40vw'
+        let b1=document.getElementById('b1')
+        function randomcolor(){
+            let color="#"
+            for(i=0;i<6;i++){
+                color+=Math.floor((Math.random()*16)).toString(16)
+                return color
+            }
+        }
+        b1.addEventListener('click',()=>{
+            div1.style.backgroundColor=randomColor()
+        })
+
+
+    </script>
+</body>
+</html>
